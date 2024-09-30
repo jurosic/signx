@@ -1,0 +1,1 @@
+SignX is a python library thats used for handwritten signature checking and verification

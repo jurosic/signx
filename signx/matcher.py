@@ -21,6 +21,7 @@ def match_signature(signature):
     # Compare the signature to all signatures in the database, and return the closest match
     closest_match = None
     closest_distance = 999999
+    
     for name, sig in data.items():
         distance = 0
         for i, (x1, y1, _) in enumerate(sig):
@@ -30,4 +31,5 @@ def match_signature(signature):
             closest_match = name
             closest_distance = distance
     
-    return None
+    
+    return closest_match

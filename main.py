@@ -8,5 +8,7 @@ while win.running():
         sig = win.get_signature()
         sig = signx.filters.remove_leading_duplicates(sig)
         sig = signx.filters.crop_to_content(sig)
-        print(sig)
+        
+        print(signx.match_signature(sig))
+        
         win.reset()

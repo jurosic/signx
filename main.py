@@ -5,5 +5,5 @@ win.run()
 
 while win.running():
     if win.finished():
-        print(win.get_signature())
+        print(signx.filters.remove_leading_duplicates(win.get_signature()))
         win.reset()

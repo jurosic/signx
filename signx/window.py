@@ -41,6 +41,7 @@ class SignatureWindow:
         self.canvas.fill((255, 255, 255))
         self._finished = False
         self.sig_buffer = []
+        self.last_coords = None
         
     def finished(self):
         return self._finished

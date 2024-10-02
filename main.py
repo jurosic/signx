@@ -11,4 +11,7 @@ while win.running():
         
         print(signx.match_signature(sig))
         
+        #signx.register_signature('Juraj', sig)
+        
         win.reset()
+        
